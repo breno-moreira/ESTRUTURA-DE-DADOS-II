@@ -21,7 +21,6 @@ def calcula_ocorrencias(var_json):
         soma.append(frequencia)
     return sum(soma)
 
-#-----------------------EXEMPLO ALYSSON---------------------------#
 
 def frequencia_minima(nome):
     dados = busca(nome)
@@ -79,43 +78,3 @@ def bubble_sort(L):
                 L[i], L[i+1] = L[i+1],L[i]
         j = j-1
     return L
-#-----------------------JULIA---------------------------#
-
-""" def min_frequencia(var_json):
-    conteudo = var_json[0]
-    resposta = conteudo.get("res", [])
-    lista_frequencias = []
-    for elemento in resposta:
-        frequencia = elemento['frequencia']
-        lista_frequencias.append(frequencia)
-    
-    for elemento in resposta:
-        if (elemento['frequencia'] == min(lista_frequencias)):
-            periodo = elemento['periodo']
-
-    objeto = {
-        "min_frequencia": min(lista_frequencias),
-        "periodo": periodo
-    }
-    
-    return objeto
- """
-
-""" def max_frequencia(var_json):
-    conteudo = var_json[0]
-    resposta = conteudo.get("res", [])
-    lista_frequencias = []
-    for elemento in resposta:
-        frequencia = elemento['frequencia']
-        lista_frequencias.append(frequencia)
-    
-    for elemento in resposta:
-        if (elemento['frequencia'] == max(lista_frequencias)):
-            periodo = elemento['periodo']
-
-    objeto = {
-        "max_frequencia": max(lista_frequencias),
-        "periodo": periodo
-    }
-    
-    return objeto """
