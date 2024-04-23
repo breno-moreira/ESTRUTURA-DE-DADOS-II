@@ -16,7 +16,6 @@ def get_nome(obj):
     else:
         return []
 
-# ------ BUBBLE SORT ------ #
 
 def bubble_sort(L):
     contador = 0
@@ -29,8 +28,7 @@ def bubble_sort(L):
         j = j-1
     print(contador)
     return {'lista':L, 'contador': contador}
-
-# ------ MERGE SORT ------ #
+    
 
 def intercala(inicio, meio, fim, lista):
     w_lista = []
@@ -69,7 +67,6 @@ def merge_sort(inicio, fim, lista):
         contador += intercala(inicio, meio, fim, lista)
     return {'lista':lista, 'contador': contador}
 
-# ------ QUICK SORT ------ #
 
 def quick_sort(lista):
     total_comparacoes = quick_sort_ordenado(lista, 0, len(lista) - 1)
